@@ -31,7 +31,7 @@ const List = () => {
   ];
 
   return (
-    <div>
+    <div className={styleUtils.list}>
       <h1 className={styleUtils.list__title}>FAQ</h1>
       <ul className={styleUtils.list__items}>
         {data.map((item) => {

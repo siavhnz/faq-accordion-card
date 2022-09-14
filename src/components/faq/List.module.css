@@ -8,3 +8,15 @@
 .list__items {
     margin-top: 1.75rem;
 }
+
+@media (min-width: 90em) { /* 1440px */
+    .list {
+        padding:3.65rem 6.8rem 3.65rem 1rem;
+    }
+    .list__title {
+        text-align: left;
+    }
+    .list__items {
+        margin-top: 2.1rem;
+    }
+}

@@ -51,6 +51,8 @@ Users should be able to:
 
 - Working on mobile design based on `design` folder
 
+- Working on desktop design based on `design` folder
+
 
 
 ### Built with

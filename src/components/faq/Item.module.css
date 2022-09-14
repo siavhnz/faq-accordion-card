@@ -52,3 +52,17 @@
 .collapse {
     display: none;
 }
+
+@media (min-width: 90em) { /* 1440px */
+    .container {
+        margin-bottom: 0.95rem;
+        padding-bottom: 0.95rem;
+    }
+    .title {
+        font-size: 0.9rem;
+    }
+    .desc {
+        margin-top: 0.4rem;
+        font-size: 0.75rem;
+    }
+}

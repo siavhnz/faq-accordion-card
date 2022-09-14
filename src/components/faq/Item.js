@@ -1,16 +1,27 @@
 import styleUtils from "./Item.module.css";
 
 const Item = (props) => {
-  const { title, desc } = { ...props.item };
+  const { id, title, desc } = { ...props.item };
+
+  // Handle title class
+  let titleClass = styleUtils.title;
+  let descClass = styleUtils.desc;
+
+  if (id == 2) {
+    titleClass = `${styleUtils.title} ${styleUtils.active}`;
+    descClass = styleUtils.desc;
+  } else {
+    descClass = `${styleUtils.desc} ${styleUtils.inactive}`;
+  }
 
   return (
     <li className={styleUtils.container}>
       <div className={styleUtils.header}>
-        <h2 className={styleUtils.title}>{title}</h2>
+        <h2 className={titleClass}>{title}</h2>
 
         <div className={`${styleUtils.icon} ${styleUtils["active"]}`}></div>
       </div>
-      <p className={styleUtils.desc}>{desc}</p>
+      <p className={descClass}>{desc}</p>
     </li>
   );
 };

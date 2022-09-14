@@ -1,3 +1,7 @@
+.container {
+    position: relative;
+}
+
 .woman-online-img {
     background-image: url('../../images/illustration-woman-online-mobile.svg'), url('../../images/bg-pattern-mobile.svg');
     background-repeat: no-repeat;
@@ -6,4 +10,28 @@
     height: 13rem;
     margin-top: -8rem;
     margin-bottom: 1.5rem;
+}
+
+@media (min-width: 90em) { /* 1440px */
+    .woman-online-img {
+        background-image:url('../../images/illustration-woman-online-desktop.svg'), 
+        url('../../images/bg-pattern-desktop.svg');
+        background-repeat: no-repeat;
+        background-size: contain, 100vw;
+        background-position:left -4rem center, bottom 30% left 110%;  
+        height: 100%;
+        margin-top:auto;
+        margin-bottom: auto;
+    }
+
+    .box-img {
+        background-image: url('../../images/illustration-box-desktop.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width:15rem;
+        height: 12rem;
+        position:absolute;
+        top:40%;
+        left:-6rem
+    }
 }
