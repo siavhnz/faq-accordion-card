@@ -1,0 +1,9 @@
+.woman-online-img {
+    background-image: url('../../images/illustration-woman-online-mobile.svg'), url('../../images/bg-pattern-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: top center, bottom center;
+    background-size: 14.5rem;
+    height: 13rem;
+    margin-top: -8rem;
+    margin-bottom: 1.5rem;
+}

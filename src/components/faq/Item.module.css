@@ -1,0 +1,54 @@
+.container {
+    border-bottom: 1px solid var(--light-grayish-blue);
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.title {
+    color: var(--dark-grayish-blue);
+    font-size: 0.825rem;
+    font-weight: 400;
+    padding-right: 0.5rem;
+}
+.title:hover {
+    color: var(--soft-red);
+}
+
+
+.desc {
+    margin-top: 0.5rem;
+    color: var(--grayish-blue);
+    font-size: 0.78rem;
+}
+
+.icon {
+    width: 10px;
+    height: 7px;
+    margin-left:auto;
+    align-self: center;
+    background-image: url('../../images/icon-arrow-down.svg');
+    background-repeat: no-repeat;
+}
+
+/* manage states */
+
+.title.active {
+    font-weight: 700;
+}
+
+.desc.inactive {
+    display: none;
+}
+
+.icon.active {
+    transform: rotate(180deg);
+}
+
+.collapse {
+    display: none;
+}

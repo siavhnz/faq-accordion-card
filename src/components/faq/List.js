@@ -1,4 +1,5 @@
 import Item from "./Item";
+import styleUtils from "./List.module.css";
 
 const List = () => {
   const data = [
@@ -9,7 +10,7 @@ const List = () => {
     },
     {
       id: "2",
-      title: "What is the maximum file upload size?",
+      title: "What is the maximum file upload size? ",
       desc: "No more than 2GB. All files in your account must fit your allotted storage space.",
     },
     {
@@ -31,8 +32,8 @@ const List = () => {
 
   return (
     <div>
-      <h1>FAQ</h1>
-      <ul>
+      <h1 className={styleUtils.list__title}>FAQ</h1>
+      <ul className={styleUtils.list__items}>
         {data.map((item) => {
           return <Item key={item.id} item={item} />;
         })}

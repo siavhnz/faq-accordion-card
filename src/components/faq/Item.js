@@ -1,13 +1,16 @@
+import styleUtils from "./Item.module.css";
+
 const Item = (props) => {
   const { title, desc } = { ...props.item };
 
   return (
-    <li>
-      <div>
-        <h2>{title}</h2>
-        <div className="arrow-icon"></div>
+    <li className={styleUtils.container}>
+      <div className={styleUtils.header}>
+        <h2 className={styleUtils.title}>{title}</h2>
+
+        <div className={`${styleUtils.icon} ${styleUtils["active"]}`}></div>
       </div>
-      <p>{desc}</p>
+      <p className={styleUtils.desc}>{desc}</p>
     </li>
   );
 };

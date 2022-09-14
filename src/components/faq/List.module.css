@@ -1,0 +1,10 @@
+.list__title {
+    text-align: center;
+    font-weight: 700;
+    color: var(--desaturated-blue);
+    font-size: 2rem;
+}
+
+.list__items {
+    margin-top: 1.75rem;
+}

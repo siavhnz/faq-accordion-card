@@ -49,19 +49,19 @@ Users should be able to:
 
 - Creating components
 
+- Working on mobile design based on `design` folder
+
 
 
 ### Built with
 
 - [React](https://reactjs.org/)
+- [CSS Module](https://create-react-app.dev/docs/adding-a-css-modules-stylesheet) - For styles
+- Mobile-first workflow
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
+- Grid
 
 ### What I learned
 
