@@ -45,6 +45,12 @@ Users should be able to:
 - Identifying components
   - FAQ, FancyImage, List, Item
 
+- Adding CSS Preflight
+
+- Creating components
+
+
+
 ### Built with
 
 - [React](https://reactjs.org/)
