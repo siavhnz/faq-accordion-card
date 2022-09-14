@@ -40,7 +40,10 @@ Users should be able to:
 
 ### Workflow
 
-- Preparing workflow (Installing Reactjs, Adding assets, Preparing README.md) 
+- Preparing workflow (Installing Reactjs, Adding assets, Preparing README.md)
+
+- Identifying components
+  - FAQ, FancyImage, List, Item
 
 ### Built with
 
