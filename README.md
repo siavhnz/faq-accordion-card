@@ -33,8 +33,9 @@ Users should be able to:
 
 ### Links
 
-- Solution: [frontendmentor.io](https://your-solution-url.com)
-- Live Site: [netlify.app](https://your-live-site-url.com)
+- Solution: [frontendmentor.io](https://www.frontendmentor.io/solutions/faq-accordion-card-DJ5zbtFUT0)
+
+- Live Site: [netlify.app](https://faq-ac-card.netlify.app/)
 
 ## My process
 
