@@ -2,12 +2,14 @@
     border-bottom: 1px solid var(--light-grayish-blue);
     margin-bottom: 1rem;
     padding-bottom: 1rem;
+    max-width: 25rem;
 }
 
 .header {
     display: grid;
     grid-template-columns: repeat(2, auto);
     cursor: pointer;
+    user-select: none;
 }
 
 .title {
@@ -25,6 +27,8 @@
     margin-top: 0.5rem;
     color: var(--grayish-blue);
     font-size: 0.78rem;
+    overflow: hidden;
+    transition: height ease 0.3s;
 }
 
 .icon {
@@ -34,6 +38,7 @@
     align-self: center;
     background-image: url('../../images/icon-arrow-down.svg');
     background-repeat: no-repeat;
+    transition: transform 0.5s ease;
 }
 
 /* manage states */
@@ -42,16 +47,14 @@
     font-weight: 700;
 }
 
-.desc.inactive {
-    display: none;
-}
-
 .icon.active {
     transform: rotate(180deg);
 }
 
-.collapse {
-    display: none;
+@media (min-width:40em) {
+    .container {
+        min-width: 25rem;
+    }
 }
 
 @media (min-width: 90em) { /* 1440px */

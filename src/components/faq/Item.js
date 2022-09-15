@@ -1,27 +1,49 @@
+import { useEffect } from "react";
+import { useState } from "react";
+import { useRef } from "react";
 import styleUtils from "./Item.module.css";
 
-const Item = (props) => {
-  const { id, title, desc } = { ...props.item };
+const Item = ({ item, onToggle, isActive }) => {
+  const { id, title, desc } = { ...item };
 
-  // Handle title and desc classes
-  let titleClass = styleUtils.title;
-  let descClass = styleUtils.desc;
+  // Used for animating description when it toggle
+  const [descHeight, setDescHeight] = useState(0);
 
-  if (+id === 2) {
-    titleClass = `${styleUtils.title} ${styleUtils.active}`;
-    descClass = styleUtils.desc;
-  } else {
-    descClass = `${styleUtils.desc} ${styleUtils.inactive}`;
-  }
+  // Used for access height of description
+  const descElement = useRef();
+
+  // Recreate component when height of description is available
+  // And become active
+  useEffect(() => {
+    if (isActive) {
+      setDescHeight(descElement.current.scrollHeight);
+    } else {
+      setDescHeight(0);
+    }
+  }, [isActive]);
+
+  // Handle active classes for title, icon
+  const titleClass = isActive
+    ? `${styleUtils.title} ${styleUtils.active}`
+    : styleUtils.title;
+
+  const iconClass = isActive
+    ? `${styleUtils.icon} ${styleUtils.active}`
+    : styleUtils.icon;
 
   return (
     <li className={styleUtils.container}>
-      <div className={styleUtils.header}>
+      <div className={styleUtils.header} onClick={onToggle}>
         <h2 className={titleClass}>{title}</h2>
-
-        <div className={`${styleUtils.icon} ${styleUtils["active"]}`}></div>
+        <div className={iconClass}></div>
       </div>
-      <p className={descClass}>{desc}</p>
+      <p
+        ref={descElement}
+        className={styleUtils.desc}
+        style={{ height: descHeight }}
+      >
+        {desc}
+      </p>
     </li>
   );
 };

@@ -1,7 +1,10 @@
+import { useState } from "react";
 import Item from "./Item";
 import styleUtils from "./List.module.css";
 
 const List = () => {
+  const [clickedItem, setClicedItem] = useState(1);
+
   const data = [
     {
       id: "1",
@@ -30,12 +33,27 @@ const List = () => {
     },
   ];
 
+  const toggleHandler = (index) => {
+    if (index === clickedItem) {
+      setClicedItem(-1);
+      return;
+    }
+    setClicedItem(index);
+  };
+
   return (
     <div className={styleUtils.list}>
       <h1 className={styleUtils.list__title}>FAQ</h1>
       <ul className={styleUtils.list__items}>
-        {data.map((item) => {
-          return <Item key={item.id} item={item} />;
+        {data.map((item, index) => {
+          return (
+            <Item
+              key={item.id}
+              item={item}
+              onToggle={toggleHandler.bind(this, index)}
+              isActive={index === clickedItem}
+            />
+          );
         })}
       </ul>
     </div>

@@ -53,6 +53,11 @@ Users should be able to:
 
 - Working on desktop design based on `design` folder
 
+- Working on React functionality for accordion faq
+
+- Completing README.md
+
+- Publish on Github.com | netligy.app | frontendmentor.io
 
 
 ### Built with
@@ -67,12 +72,16 @@ Users should be able to:
 
 ### What I learned
 
+Image position and smooth toggling was the tricky part of this challenge. Finally I've solved this challenge by using useRef, useState, and useEffect 
+to achieve smooth animation on toggling description section
 
 ### Continued development
 
+Reading and using animation libraries in my upcoming solution
+
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [5 ways to animte a React app](https://medium.com/hackernoon/5-ways-to-animate-a-reactjs-app-in-2019-56eb9af6e3bf)
 
 ## Author
 
