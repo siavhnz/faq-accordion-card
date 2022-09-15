@@ -6,10 +6,26 @@
     background-image: url('../../images/illustration-woman-online-mobile.svg'), url('../../images/bg-pattern-mobile.svg');
     background-repeat: no-repeat;
     background-position: top center, bottom center;
-    background-size: 14.5rem;
+    background-size: 60vw;
     height: 13rem;
     margin-top: -8rem;
     margin-bottom: 1.5rem;
+}
+
+@media (min-width:23em) { /* ~ 375px */
+    .woman-online-img {
+        background-size: 16rem;
+        height: 14rem;
+        margin-top: -9rem;
+    }
+}
+
+@media (min-width:40em) {
+    .woman-online-img {
+        background-size: 24rem;
+        height: 20rem;
+        margin-top: -12rem;
+    }
 }
 
 @media (min-width: 90em) { /* 1440px */

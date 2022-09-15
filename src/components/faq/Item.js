@@ -3,11 +3,11 @@ import styleUtils from "./Item.module.css";
 const Item = (props) => {
   const { id, title, desc } = { ...props.item };
 
-  // Handle title class
+  // Handle title and desc classes
   let titleClass = styleUtils.title;
   let descClass = styleUtils.desc;
 
-  if (id == 2) {
+  if (+id === 2) {
     titleClass = `${styleUtils.title} ${styleUtils.active}`;
     descClass = styleUtils.desc;
   } else {
