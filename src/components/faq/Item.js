@@ -4,7 +4,7 @@ import { useRef } from "react";
 import styleUtils from "./Item.module.css";
 
 const Item = ({ item, onToggle, isActive }) => {
-  const { id, title, desc } = { ...item };
+  const { title, desc } = { ...item };
 
   // Used for animating description when it toggle
   const [descHeight, setDescHeight] = useState(0);
