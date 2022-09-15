@@ -51,11 +51,6 @@
     transform: rotate(180deg);
 }
 
-@media (min-width:40em) {
-    .container {
-        min-width: 25rem;
-    }
-}
 
 @media (min-width: 90em) { /* 1440px */
     .container {
